@@ -65,3 +65,18 @@ emscripten port is based on SDL port, so it supports sound and music! For music,
 
 ## SDL
 ![SDL](screenshots/sdl.png)
+
+## rust bootstrap (no_std + musl)
+
+This repository now includes an initial Rust workspace for incremental porting:
+
+- `rust/doomgeneric-core`: `#![no_std]` core crate with platform IO traits.
+- Traits are separated by concern (`Renderer`, `Input`, `Audio`, `Clock`) and can be composed through `PlatformIo`.
+- `musl` target defaults are prepared in `.cargo/config.toml` for static-friendly builds.
+
+Quick checks:
+
+```bash
+rustup target add x86_64-unknown-linux-musl
+cargo check -p doomgeneric-core --target x86_64-unknown-linux-musl
+```

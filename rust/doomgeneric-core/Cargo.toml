@@ -1,0 +1,9 @@
+[package]
+name = "doomgeneric-core"
+version = "0.1.0"
+edition = "2021"
+description = "no_std core interfaces for porting doomgeneric runtime"
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
