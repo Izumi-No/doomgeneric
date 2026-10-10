@@ -1,9 +1,15 @@
 [package]
 name = "doomgeneric-core"
 version = "0.1.0"
-edition = "2021"
-description = "no_std core interfaces for porting doomgeneric runtime"
+edition.workspace = true
+description = "no_std, libc-free portable Doom engine core. Depends only on core+alloc."
 license = "MIT"
+rust-version = "1.98"
 
 [lib]
 path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]

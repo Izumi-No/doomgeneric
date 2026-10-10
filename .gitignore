@@ -12,3 +12,5 @@ Build/
 doomgeneric
 doomgeneric.map
 target/
+*.ppm
+demo.lmp title.ppm finale.ppm

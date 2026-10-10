@@ -5,3 +5,10 @@ version = 4
 [[package]]
 name = "doomgeneric-core"
 version = "0.1.0"
+
+[[package]]
+name = "doomgeneric-host-headless"
+version = "0.1.0"
+dependencies = [
+ "doomgeneric-core",
+]

@@ -1,0 +1,13 @@
+[package]
+name = "doomgeneric-host-headless"
+version = "0.1.0"
+edition.workspace = true
+description = "Reference host backend for doomgeneric-core: renders frames to PPM, no window/audio."
+license = "MIT"
+rust-version = "1.98"
+
+[dependencies]
+doomgeneric-core = { path = "../doomgeneric-core" }
+
+[lints]
+workspace = true

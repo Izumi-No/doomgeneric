@@ -1,7 +1,18 @@
 [workspace]
-members = ["rust/doomgeneric-core"]
+members = [
+    "rust/doomgeneric-core",
+    "rust/doomgeneric-host-headless",
+]
 resolver = "2"
 
 [workspace.package]
 edition = "2021"
 license = "MIT"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[profile.release]
+panic = "abort"
+strip = true
+lto = true
