@@ -13,4 +13,8 @@ doomgeneric
 doomgeneric.map
 target/
 *.ppm
-demo.lmp title.ppm finale.ppm
+port-00.pgm
+demo.lmp
+title.ppm
+finale.ppm
+*.WAD

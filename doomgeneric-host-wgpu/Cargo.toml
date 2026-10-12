@@ -1,0 +1,15 @@
+[package]
+name = "doomgeneric-host-wgpu"
+version = "0.1.0"
+edition.workspace = true
+description = "Windowed, playable host for doomgeneric-core: winit window + wgpu presentation."
+license = "MIT"
+rust-version.workspace = true
+
+[dependencies]
+doomgeneric-core = { path = "../doomgeneric-core" }
+winit = "0.30"
+wgpu = "24"
+
+[lints]
+workspace = true

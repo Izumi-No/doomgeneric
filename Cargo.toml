@@ -1,13 +1,15 @@
 [workspace]
 members = [
-    "rust/doomgeneric-core",
-    "rust/doomgeneric-host-headless",
+    "doomgeneric-core",
+    "doomgeneric-host-headless",
+    "doomgeneric-host-wgpu",
 ]
 resolver = "2"
 
 [workspace.package]
 edition = "2021"
 license = "MIT"
+rust-version = "1.76"
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
